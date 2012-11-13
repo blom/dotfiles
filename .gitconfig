@@ -1,0 +1,8 @@
+[user]
+  name = Ørjan Blom
+  email = blom@blom.tv
+[core]
+  autocrlf = input
+  whitespace = trailing-space
+[color]
+  diff = true
