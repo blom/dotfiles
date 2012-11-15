@@ -15,13 +15,13 @@ set nocompatible
 
 set colorcolumn=80
 set encoding=utf-8
+set laststatus=2
 set number
 set ruler
 set viminfo='100,<1000,s10,h
 
 set autoindent
 set expandtab
-set laststatus=2
 set shiftwidth=2
 set softtabstop=2
 
