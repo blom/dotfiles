@@ -48,6 +48,7 @@ else
   colorscheme desert
 endif
 
+map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>t :%s/\s\+$//e<CR>
