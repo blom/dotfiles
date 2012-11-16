@@ -34,6 +34,9 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=T
 
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp
+
 set list
 set listchars=trail:·
 autocmd InsertEnter * set listchars=
