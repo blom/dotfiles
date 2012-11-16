@@ -6,3 +6,5 @@
   whitespace = trailing-space
 [color]
   diff = true
+[push]
+  default = simple
