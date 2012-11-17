@@ -34,6 +34,11 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=T
 
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 
@@ -73,3 +78,5 @@ map <D-6> 6gt
 map <D-7> 7gt
 map <D-8> 8gt
 map <D-9> 9gt
+
+nnoremap <esc> :nohlsearch<cr>
