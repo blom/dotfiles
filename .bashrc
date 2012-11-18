@@ -2,8 +2,6 @@ load_files=(
   /etc/bash_completion
   /usr/local/etc/bash_completion
   /usr/local/Library/Contributions/brew_bash_completion.sh
-  ~/.rvm/scripts/rvm
-  ~/.rvm/scripts/completion
 )
 for file in ${load_files[*]}; do
   [[ -f $file ]] && . $file
@@ -28,3 +26,7 @@ if [[ $(command -v _known_hosts) ]]; then
     complete -F _known_hosts ${cmd}
   done
 fi
+
+for file in ~/.rvm/scripts/rvm ~/.rvm/scripts/completion; do
+  [[ -f $file ]] && . $file
+done
