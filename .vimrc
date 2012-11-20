@@ -43,7 +43,7 @@ set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 
 set list
-set listchars=trail:·
+set listchars=tab:>·,trail:·
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
