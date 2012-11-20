@@ -44,8 +44,8 @@ set directory=~/.vim/tmp
 
 set list
 set listchars=trail:·
-autocmd InsertEnter * set listchars=
-autocmd InsertLeave * set listchars=trail:·
+autocmd InsertEnter * set nolist
+autocmd InsertLeave * set list
 
 filetype plugin indent on
 syntax on
