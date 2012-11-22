@@ -15,7 +15,7 @@ fi
 PS1="\W"
 [[ $(command -v __git_ps1) ]] && PS1=$PS1'$(__git_ps1 " (%s)")'
 PS1="$PS1\\$ "
-PS1="\[\e]0;\u@\h:\w\a\]$PS1"
+PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 
 export EDITOR PATH PS1
 
