@@ -12,7 +12,7 @@ PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 if [[ $(command -v ruby) ]]; then
   PATH=$(ruby -e 'puts ENV["PATH"].split(":").uniq.join(":")')
 fi
-PS1="\W"
+PS1="\u@\h:\W"
 [[ $(command -v __git_ps1) ]] && PS1=$PS1'$(__git_ps1 " (%s)")'
 PS1="$PS1\\$ "
 PS1="\[\e]0;\u@\h: \w\a\]$PS1"
