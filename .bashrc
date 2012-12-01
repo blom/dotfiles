@@ -20,6 +20,7 @@ PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 export EDITOR PATH PS1
 
 shopt -s histappend
+HISTCONTROL="erasedups:ignoreboth"
 PROMPT_COMMAND="history -a"
 
 if [[ $(command -v _known_hosts) ]]; then
