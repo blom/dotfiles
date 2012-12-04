@@ -7,6 +7,7 @@ for file in ${load_files[*]}; do
   [[ -f $file ]] && . $file
 done
 
+EDITOR=vim
 [[ $(command -v mvim) ]] && alias vim="mvim"
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 if [[ $(command -v ruby) ]]; then
