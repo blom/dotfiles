@@ -33,8 +33,11 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-set guicursor+=a:blinkon500
-set guicursor+=a:blinkoff500
+set cursorline
+set guicursor+=a:blinkon0
+highlight Cursor guifg=black guibg=white
+highlight CursorLine term=none cterm=none
+
 set guifont=Bitstream\ Vera\ Sans\ Mono:h14
 set guioptions-=l
 set guioptions-=L
