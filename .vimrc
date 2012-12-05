@@ -58,6 +58,12 @@ set listchars=tab:>·,trail:·
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
+" See last-position-jump
+autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
+
 map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
