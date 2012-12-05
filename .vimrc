@@ -13,6 +13,15 @@ let vimclojure#ParenRainbow = 1
 
 set nocompatible
 
+filetype plugin indent on
+syntax on
+
+if has("gui_running")
+  colorscheme solarized
+else
+  colorscheme desert
+endif
+
 set colorcolumn=80
 set encoding=utf-8
 set laststatus=2
@@ -45,15 +54,6 @@ set list
 set listchars=tab:>·,trail:·
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
-
-filetype plugin indent on
-syntax on
-
-if has("gui_running")
-  colorscheme solarized
-else
-  colorscheme desert
-endif
 
 map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
