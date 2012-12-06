@@ -64,10 +64,20 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
+" See http://vimcasts.org/episodes/tidying-whitespace/
+function! Preserve(command)
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  execute a:command
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
 map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
-map <Leader>t :%s/\s\+$//e<CR>
+map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
 
 map j gj
 map k gk
