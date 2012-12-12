@@ -37,6 +37,7 @@ set cursorline
 set guicursor+=a:blinkon0
 highlight Cursor guifg=black guibg=white
 highlight CursorLine term=none cterm=none
+highlight MatchParen guifg=black
 
 set guifont=Bitstream\ Vera\ Sans\ Mono:h14
 set guioptions-=l
