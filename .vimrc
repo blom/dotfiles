@@ -59,6 +59,8 @@ set listchars=tab:>·,trail:·
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
+autocmd FileType puppet set commentstring=#\ %s
+
 " See last-position-jump
 autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
