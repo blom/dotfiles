@@ -9,6 +9,7 @@ let mapleader = ","
 let MRU_Add_Menu = 0
 let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
 let NERDTreeShowHidden = 1
+let vimclojure#FuzzyIndent = 1
 let vimclojure#ParenRainbow = 1
 
 set nocompatible
