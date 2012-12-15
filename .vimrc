@@ -1,17 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-let g:ctrlp_dotfiles = 1
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 'ra'
-let g:paredit_electric_return = 1
-let mapleader = ","
-let MRU_Add_Menu = 0
-let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
-let NERDTreeShowHidden = 1
-let vimclojure#FuzzyIndent = 1
-let vimclojure#ParenRainbow = 1
-
 set nocompatible
 
 filetype plugin indent on
@@ -62,6 +51,16 @@ autocmd InsertLeave * set list
 
 autocmd FileType puppet set commentstring=#\ %s
 
+let g:ctrlp_dotfiles = 1
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 'ra'
+let g:paredit_electric_return = 1
+let MRU_Add_Menu = 0
+let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
+let NERDTreeShowHidden = 1
+let vimclojure#FuzzyIndent = 1
+let vimclojure#ParenRainbow = 1
+
 " See last-position-jump
 autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -78,6 +77,7 @@ function! Preserve(command)
   call cursor(l, c)
 endfunction
 
+let mapleader = ","
 map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
