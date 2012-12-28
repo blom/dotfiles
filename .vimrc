@@ -91,6 +91,14 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+function! PostVimEnter()
+  nnoremap <d-up>    :resize +5<cr>
+  nnoremap <d-down>  :resize -5<cr>
+  nnoremap <d-left>  :vertical resize -5<cr>
+  nnoremap <d-right> :vertical resize +5<cr>
+endfunction
+autocmd VimEnter * call PostVimEnter()
+
 map <D-1> 1gt
 map <D-2> 2gt
 map <D-3> 3gt
