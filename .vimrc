@@ -52,6 +52,7 @@ autocmd InsertLeave * set list
 autocmd FileType puppet set commentstring=#\ %s
 
 let delimitMate_excluded_ft = "clojure"
+let delimitMate_expand_cr = 1
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 'ra'
