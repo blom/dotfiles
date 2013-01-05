@@ -83,6 +83,7 @@ let mapleader = ","
 map <Leader>f :Ack<space>
 map <Leader>m :MRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
+map <Leader>s :set spell!<CR>
 map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
 
 map j gj
