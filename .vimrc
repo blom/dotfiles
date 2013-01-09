@@ -49,6 +49,7 @@ set listchars=tab:▸·,trail:·
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
+autocmd BufRead,BufNewFile *.ejs setfiletype html
 autocmd FileType puppet set commentstring=#\ %s
 
 let delimitMate_excluded_ft = "clojure"
