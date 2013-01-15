@@ -1,4 +1,4 @@
 --smart-case
 --type-set=haml=.haml
---type-set=markdown=.markdown,.md
+--type-set=markdown=.markdown,.md,.mdown
 --type-set=puppet=.pp
