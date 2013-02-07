@@ -59,7 +59,6 @@ let g:ctrlp_dotfiles = 1
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 'ra'
 let g:paredit_electric_return = 1
-let MRU_Add_Menu = 0
 let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
 let NERDTreeShowHidden = 1
 let vimclojure#FuzzyIndent = 1
@@ -83,7 +82,7 @@ endfunction
 
 let mapleader = ","
 map <Leader>f :Ack<space>
-map <Leader>m :MRU<CR>
+map <Leader>m :CtrlPMRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>s :set spell!<CR>
 map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
