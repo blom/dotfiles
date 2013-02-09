@@ -61,8 +61,6 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:paredit_electric_return = 1
 let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
 let NERDTreeShowHidden = 1
-let vimclojure#FuzzyIndent = 1
-let vimclojure#ParenRainbow = 1
 
 " See last-position-jump
 autocmd BufReadPost *
