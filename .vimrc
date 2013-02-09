@@ -52,6 +52,11 @@ autocmd InsertLeave * set list
 autocmd BufRead,BufNewFile *.ejs setfiletype html
 autocmd FileType puppet set commentstring=#\ %s
 
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax   * RainbowParenthesesLoadRound
+autocmd Syntax   * RainbowParenthesesLoadSquare
+autocmd Syntax   * RainbowParenthesesLoadBraces
+
 let delimitMate_excluded_ft = "clojure"
 let delimitMate_expand_cr = 1
 let g:ctrlp_dotfiles = 1
