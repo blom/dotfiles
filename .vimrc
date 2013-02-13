@@ -52,10 +52,9 @@ autocmd InsertLeave * set list
 autocmd BufRead,BufNewFile *.ejs setfiletype html
 autocmd FileType puppet set commentstring=#\ %s
 
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax   * RainbowParenthesesLoadRound
-autocmd Syntax   * RainbowParenthesesLoadSquare
-autocmd Syntax   * RainbowParenthesesLoadBraces
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
 
 let delimitMate_excluded_ft = "clojure"
 let delimitMate_expand_cr = 1
@@ -86,6 +85,7 @@ let mapleader = ","
 map <Leader>f :Ack<space>
 map <Leader>m :CtrlPMRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
+map <Leader>r :RainbowParenthesesToggle<CR>
 map <Leader>s :set spell!<CR>
 map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
 
