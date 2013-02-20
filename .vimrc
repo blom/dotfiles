@@ -90,6 +90,7 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>r :RainbowParenthesesToggle<CR>
 map <Leader>s :set spell!<CR>
 map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
+map <Leader>p :set paste!<CR>
 
 map j gj
 map k gk
