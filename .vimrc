@@ -100,6 +100,8 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+imap <c-h> <space>=><space>
+
 function! PostVimEnter()
   nnoremap <d-up>    :resize +5<cr>
   nnoremap <d-down>  :resize -5<cr>
