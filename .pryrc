@@ -1,5 +1,5 @@
 begin
   require "rubygems"
-  require "ap"
+  require "awesome_print"
 rescue LoadError
 end
