@@ -84,6 +84,11 @@ function! Preserve(command)
 endfunction
 
 let mapleader = ","
+
+map <Leader>a# :Tabular /=><cr>
+map <Leader>a: :Tabular /:\zs /l0<cr>
+map <Leader>a= :Tabular /=<cr>
+
 map <Leader>f :Ack<space>
 map <Leader>m :CtrlPMRU<CR>
 map <Leader>n :NERDTreeToggle<CR>
