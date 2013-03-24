@@ -85,9 +85,9 @@ endfunction
 
 let mapleader = ","
 
-map <Leader>a# :Tabular /=><cr>
-map <Leader>a: :Tabular /:\zs /l0<cr>
-map <Leader>a= :Tabular /=<cr>
+map <Leader>a# :Tabularize /=><cr>
+map <Leader>a: :Tabularize /:\zs /l0<cr>
+map <Leader>a= :Tabularize /=<cr>
 
 map <Leader>f :Ack<space>
 map <Leader>m :CtrlPMRU<CR>
