@@ -86,6 +86,7 @@ endfunction
 let mapleader = ","
 
 map <Leader>a#  :Tabularize /=><cr>
+map <Leader>a,  :Tabularize /,\zs /l0<cr>
 map <Leader>a:  :Tabularize /:\zs /l0<cr>
 map <Leader>a=  :Tabularize /=<cr>
 map <Leader>a\| :Tabularize /\|<cr>
