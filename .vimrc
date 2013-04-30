@@ -85,19 +85,19 @@ endfunction
 
 let mapleader = ","
 
-map <Leader>a#  :Tabularize /=><cr>
-map <Leader>a,  :Tabularize /,\zs /l0<cr>
-map <Leader>a:  :Tabularize /:\zs /l0<cr>
-map <Leader>a=  :Tabularize /=<cr>
-map <Leader>a\| :Tabularize /\|<cr>
+map <leader>a#  :Tabularize /=><cr>
+map <leader>a,  :Tabularize /,\zs /l0<cr>
+map <leader>a:  :Tabularize /:\zs /l0<cr>
+map <leader>a=  :Tabularize /=<cr>
+map <leader>a\| :Tabularize /\|<cr>
 
-map <Leader>f :Ack<space>
-map <Leader>m :CtrlPMRU<CR>
-map <Leader>n :NERDTreeToggle<CR>
-map <Leader>r :RainbowParenthesesToggle<CR>
-map <Leader>s :set spell!<CR>
-map <Leader>t :call Preserve("%s/\\s\\+$//e")<CR>
-map <Leader>p :set paste!<CR>
+map <leader>f :Ack<space>
+map <leader>m :CtrlPMRU<cr>
+map <leader>n :NERDTreeToggle<cr>
+map <leader>r :RainbowParenthesesToggle<cr>
+map <leader>s :set spell!<cr>
+map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
+map <leader>p :set paste!<cr>
 
 map j gj
 map k gk
@@ -117,14 +117,14 @@ function! PostVimEnter()
 endfunction
 autocmd VimEnter * call PostVimEnter()
 
-map <D-1> 1gt
-map <D-2> 2gt
-map <D-3> 3gt
-map <D-4> 4gt
-map <D-5> 5gt
-map <D-6> 6gt
-map <D-7> 7gt
-map <D-8> 8gt
-map <D-9> 9gt
+map <d-1> 1gt
+map <d-2> 2gt
+map <d-3> 3gt
+map <d-4> 4gt
+map <d-5> 5gt
+map <d-6> 6gt
+map <d-7> 7gt
+map <d-8> 8gt
+map <d-9> 9gt
 
 nnoremap <esc><esc> :nohlsearch<cr>
