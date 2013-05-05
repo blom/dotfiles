@@ -92,13 +92,24 @@ map <leader>a:  :Tabularize /:\zs /l0<cr>
 map <leader>a=  :Tabularize /=<cr>
 map <leader>a\| :Tabularize /\|<cr>
 
-map <leader>f :Ack<space>
-map <leader>m :CtrlPMRU<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>r :RainbowParenthesesToggle<cr>
 map <leader>s :set spell!<cr>
 map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
 map <leader>p :set paste!<cr>
+
+map <leader>m  :CtrlPMRU<cr>
+map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
+map <leader>ga :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
+map <leader>gc :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
+map <leader>gh :CtrlPClearCache<cr>\|:CtrlP app/helpers<cr>
+map <leader>gm :CtrlPClearCache<cr>\|:CtrlP app/models<cr>
+map <leader>gv :CtrlPClearCache<cr>\|:CtrlP app/views<cr>
+map <leader>gf :CtrlPClearCache<cr>\|:CtrlP features<cr>
+map <leader>gl :CtrlPClearCache<cr>\|:CtrlP lib<cr>
+map <leader>gp :CtrlPClearCache<cr>\|:CtrlP public<cr>
+map <leader>gs :CtrlPClearCache<cr>\|:CtrlP spec<cr>
+map <leader>gt :CtrlPClearCache<cr>\|:CtrlP test<cr>
 
 map j gj
 map k gk
