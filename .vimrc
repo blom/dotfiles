@@ -98,6 +98,8 @@ map <leader>s :set spell!<cr>
 map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
 map <leader>p :set paste!<cr>
 
+let g:ctrlp_map = '<leader>F'
+
 map <leader>m  :CtrlPMRU<cr>
 map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
 map <leader>ga :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
