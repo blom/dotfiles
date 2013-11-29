@@ -7,6 +7,8 @@ for file in ${load_files[*]}; do
   [[ -f $file ]] && . $file
 done
 
+alias be="bundle exec"
+
 EDITOR=vim
 [[ $(command -v mvim) ]] && alias vim="mvim"
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
