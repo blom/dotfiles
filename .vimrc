@@ -61,6 +61,8 @@ autocmd Syntax * RainbowParenthesesLoadBraces
 
 let delimitMate_excluded_ft = "clojure"
 let delimitMate_expand_cr = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_switch_buffer = 0
