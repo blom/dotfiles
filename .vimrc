@@ -100,11 +100,13 @@ map <leader>a:  :Tabularize /:\zs /l0<cr>
 map <leader>a=  :Tabularize /=<cr>
 map <leader>a\| :Tabularize /\|<cr>
 
+map <leader>R :so ~/.vimrc<cr>
+map <leader>i :call Preserve("normal gg=G")<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>r :RainbowParenthesesToggle<cr>
 map <leader>s :set spell!<cr>
 map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
-map <leader>p :set paste!<cr>
+map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
 
 let g:ctrlp_map = '<leader>F'
 
