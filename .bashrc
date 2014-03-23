@@ -11,6 +11,7 @@ alias be="bundle exec"
 
 EDITOR=vim
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+PATH=$HOME/.rbenv/bin:$PATH
 if [[ $(command -v ruby) ]]; then
   PATH=$(ruby -e 'puts ENV["PATH"].split(":").uniq.join(":")')
 fi
@@ -31,6 +32,4 @@ if [[ $(command -v _known_hosts) ]]; then
   done
 fi
 
-for file in ~/.rvm/scripts/rvm ~/.rvm/scripts/completion; do
-  [[ -f $file ]] && . $file
-done
+[[ $(command -v rbenv) ]] && eval "$(rbenv init -)"
