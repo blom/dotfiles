@@ -10,7 +10,6 @@ done
 alias be="bundle exec"
 
 EDITOR=vim
-[[ $(command -v mvim) ]] && alias vim="mvim"
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 if [[ $(command -v ruby) ]]; then
   PATH=$(ruby -e 'puts ENV["PATH"].split(":").uniq.join(":")')
