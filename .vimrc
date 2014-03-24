@@ -12,14 +12,17 @@ else
   colorscheme desert
 endif
 
+set backspace=indent,eol,start
 set colorcolumn=80
 set encoding=utf-8
 set laststatus=2
+set mouse=a
 set number
+set relativenumber
 set scrolloff=4
 set showtabline=2
 set viminfo='100,<1000,s10,h
-set wildignore=.keep,tmp
+set wildignore=.keep,coverage,node_modules,tmp
 set wildmenu
 
 set autoindent
