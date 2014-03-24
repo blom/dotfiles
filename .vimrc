@@ -60,6 +60,8 @@ autocmd Syntax * RainbowParenthesesLoadRound
 autocmd Syntax * RainbowParenthesesLoadSquare
 autocmd Syntax * RainbowParenthesesLoadBraces
 
+command! FormatJSON %!python -m json.tool
+
 let delimitMate_excluded_ft = "clojure"
 let delimitMate_expand_cr = 1
 let g:airline_left_sep = ''
