@@ -9,6 +9,7 @@
 [push]
   default = simple
 [alias]
+  aa = add --all
   br = branch
   ca = commit --amend
   ci = commit
