@@ -4,4 +4,5 @@ begin
   Pry.start
   exit
 rescue LoadError
+  puts $!.message
 end
