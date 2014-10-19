@@ -2,6 +2,7 @@ load_files=(
   /etc/bash_completion
   /usr/local/etc/bash_completion
   /usr/local/Library/Contributions/brew_bash_completion.sh
+  /usr/local/etc/autojump.sh
 )
 for file in ${load_files[*]}; do
   [[ -f $file ]] && . $file
@@ -24,7 +25,7 @@ export EDITOR PATH PS1
 
 shopt -s histappend
 HISTCONTROL="erasedups:ignoreboth"
-PROMPT_COMMAND="history -a"
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND;} history -a"
 
 if [[ $(command -v _known_hosts) ]]; then
   for cmd in csshX curl mosh nc ssh-copy-id ssh-keygen; do
