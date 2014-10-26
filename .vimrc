@@ -115,6 +115,7 @@ map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
 
 let g:ctrlp_map = '<leader>F'
 
+map <leader>c  :CtrlPTag<cr>
 map <leader>m  :CtrlPMRU<cr>
 map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
 map <leader>ga :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
