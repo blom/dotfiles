@@ -4,6 +4,7 @@
 [core]
   autocrlf = input
   whitespace = trailing-space
+  excludesfile = ~/.gitignore
 [color]
   ui = auto
 [push]
