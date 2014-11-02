@@ -9,6 +9,7 @@ for file in ${load_files[*]}; do
 done
 
 alias be="bundle exec"
+alias ll="ls -al"
 
 EDITOR=vim
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
