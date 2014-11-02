@@ -106,6 +106,7 @@ map <leader>a=  :Tabularize /=<cr>
 map <leader>a\| :Tabularize /\|<cr>
 
 map <leader>R :so ~/.vimrc<cr>
+map <leader>b :TagbarToggle<cr>
 map <leader>i :call Preserve("normal gg=G")<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>r :RainbowParenthesesToggle<cr>
