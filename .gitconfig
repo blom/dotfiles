@@ -17,4 +17,6 @@
   co = checkout
   dc = diff --cached
   di = diff
+  lf = log --pretty=fuller
+  rc = rebase --continue
   st = status
