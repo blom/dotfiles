@@ -100,3 +100,6 @@
 [submodule ".vim/bundle/investigate.vim"]
 	path = .vim/bundle/investigate.vim
 	url = https://github.com/Keithbsmiley/investigate.vim.git
+[submodule ".vim/bundle/splitjoin.vim"]
+	path = .vim/bundle/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim.git
