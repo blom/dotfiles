@@ -11,6 +11,7 @@ done
 alias be="bundle exec"
 alias ll="ls -al"
 
+CLICOLOR=true
 EDITOR=vim
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 PATH=$HOME/.rbenv/bin:$PATH
@@ -22,7 +23,7 @@ PS1="\u@\h:\W"
 PS1="$PS1\\$ "
 PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 
-export EDITOR PATH PS1
+export CLICOLOR EDITOR PATH PS1
 
 shopt -s histappend
 HISTCONTROL="erasedups:ignoreboth"
