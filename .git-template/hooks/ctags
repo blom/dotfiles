@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+git_dir=$(git rev-parse --git-dir)
+tmp_tags=${git_dir}/tags.${$}
+
+trap 'rm -f ${tmp_tags}' EXIT
+git ls-files | ctags --tag-relative -L - -R -f ${tmp_tags}
+mv ${tmp_tags} ${git_dir}/tags

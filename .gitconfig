@@ -22,3 +22,5 @@
   st = status
 [log]
   decorate = short
+[init]
+  templatedir = ~/.git-template
