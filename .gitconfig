@@ -15,6 +15,7 @@
   ca = commit --amend
   ci = commit
   co = checkout
+  ctags = !.git/hooks/ctags
   dc = diff --cached
   di = diff
   lf = log --pretty=fuller
