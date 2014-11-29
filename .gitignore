@@ -1,3 +1,4 @@
+/.bash/*.private
 /.vim/.netrwhist
 /.vim/tmp/
 /tags
