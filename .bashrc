@@ -38,3 +38,4 @@ fi
 [[ $(command -v rbenv) ]] && eval "$(rbenv init -)"
 
 export PATH=/usr/local/heroku/bin:$PATH
+[[ -e ~/.bash/bashrc.private ]] && . ~/.bash/bashrc.private
