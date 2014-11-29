@@ -36,3 +36,5 @@ if [[ $(command -v _known_hosts) ]]; then
 fi
 
 [[ $(command -v rbenv) ]] && eval "$(rbenv init -)"
+
+export PATH=/usr/local/heroku/bin:$PATH
