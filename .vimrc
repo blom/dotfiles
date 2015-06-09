@@ -57,6 +57,7 @@ autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
 autocmd BufRead,BufNewFile *.ejs setfiletype html
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 autocmd FileType puppet set commentstring=#\ %s
 
 autocmd Syntax * RainbowParenthesesLoadRound
