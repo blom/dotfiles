@@ -112,3 +112,6 @@
 [submodule ".vim/bundle/vim-rake"]
 	path = .vim/bundle/vim-rake
 	url = https://github.com/tpope/vim-rake.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
