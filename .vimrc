@@ -68,6 +68,9 @@ command! FormatJSON %!python -m json.tool
 
 let delimitMate_excluded_ft = "clojure"
 let delimitMate_expand_cr = 1
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:ctrlp_dotfiles = 1
