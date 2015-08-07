@@ -109,6 +109,8 @@ map <leader>a:  :Tabularize /:\zs /l0<cr>
 map <leader>a=  :Tabularize /=<cr>
 map <leader>a\| :Tabularize /\|<cr>
 
+map <leader>E :Eval<cr>
+map <leader>e :%Eval<cr>
 map <leader>R :so ~/.vimrc<cr>
 map <leader>b :TagbarToggle<cr>
 map <leader>i :call Preserve("normal gg=G")<cr>
