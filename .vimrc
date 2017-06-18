@@ -114,12 +114,14 @@ map <leader>E :Eval<cr>
 map <leader>e :%Eval<cr>
 map <leader>R :so ~/.vimrc<cr>
 map <leader>b :TagbarToggle<cr>
-map <leader>i :call Preserve("normal gg=G")<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>r :RainbowParenthesesToggle<cr>
 map <leader>s :set spell!<cr>
 map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
 map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
+
+autocmd BufRead,BufNewFile *     map <leader>i :call Preserve("normal gg=G")<cr>
+autocmd BufRead,BufNewFile *.clj map <leader>i :Cljfmt<cr>
 
 let g:ctrlp_map = '<leader>F'
 
