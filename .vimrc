@@ -66,8 +66,8 @@ autocmd Syntax * RainbowParenthesesLoadBraces
 
 command! FormatJSON %!python -m json.tool
 
-let delimitMate_excluded_ft = "clojure"
-let delimitMate_expand_cr = 1
+let g:delimitMate_excluded_ft = "clojure"
+let g:delimitMate_expand_cr = 1
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
@@ -83,8 +83,8 @@ let g:investigate_syntax_for_haml = 'ruby'
 let g:investigate_syntax_for_eruby = 'ruby'
 let g:paredit_electric_return = 1
 let g:projectionist_heuristics = json_decode(join(readfile(expand('~/.projections.json'))))
-let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
-let NERDTreeShowHidden = 1
+let g:NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
+let g:NERDTreeShowHidden = 1
 
 " See last-position-jump
 autocmd BufReadPost *
