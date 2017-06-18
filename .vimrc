@@ -66,25 +66,25 @@ autocmd Syntax * RainbowParenthesesLoadBraces
 
 command! FormatJSON %!python -m json.tool
 
-let g:delimitMate_excluded_ft = "clojure"
-let g:delimitMate_expand_cr = 1
+let g:NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
+let g:NERDTreeShowHidden = 1
 let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 'ra'
+let g:delimitMate_excluded_ft = "clojure"
+let g:delimitMate_expand_cr = 1
+let g:investigate_syntax_for_eruby = 'ruby'
+let g:investigate_syntax_for_haml = 'ruby'
 let g:investigate_use_dash = 1
 let g:investigate_use_url_for_ruby = 1
-let g:investigate_syntax_for_haml = 'ruby'
-let g:investigate_syntax_for_eruby = 'ruby'
 let g:paredit_electric_return = 1
 let g:projectionist_heuristics = json_decode(join(readfile(expand('~/.projections.json'))))
-let g:NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
-let g:NERDTreeShowHidden = 1
 
 " See last-position-jump
 autocmd BufReadPost *
