@@ -82,6 +82,7 @@ let g:investigate_use_url_for_ruby = 1
 let g:investigate_syntax_for_haml = 'ruby'
 let g:investigate_syntax_for_eruby = 'ruby'
 let g:paredit_electric_return = 1
+let g:projectionist_heuristics = json_decode(join(readfile(expand('~/.projections.json'))))
 let NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
 let NERDTreeShowHidden = 1
 
