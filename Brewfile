@@ -1,0 +1,17 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/cask'
+
+brew 'autojump'
+brew 'bash'
+brew 'bash-completion'
+brew 'bash-git-prompt'
+brew 'ctags'
+brew 'git'
+brew 'leiningen'
+brew 'macvim'
+brew 'rbenv'
+brew 'rbenv-default-gems'
+brew 'the_silver_searcher'
+brew 'tmux'
+brew 'vim'
