@@ -124,3 +124,6 @@
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
+[submodule ".vim/bundle/vim-cljfmt"]
+	path = .vim/bundle/vim-cljfmt
+	url = https://github.com/venantius/vim-cljfmt.git
