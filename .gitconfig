@@ -20,6 +20,7 @@
   di = diff
   fp = fetch --all --prune
   lf = log --pretty=fuller
+  lp = log -p
   rc = rebase --continue
   st = status
 [log]
