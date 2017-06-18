@@ -32,7 +32,7 @@ set softtabstop=2
 
 set cursorline
 set guicursor+=a:blinkon0
-highlight Cursor guifg=black guibg=white
+highlight Cursor guifg=white guibg=black
 highlight CursorLine term=none cterm=none
 highlight MatchParen guifg=black
 
