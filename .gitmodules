@@ -127,3 +127,6 @@
 [submodule ".vim/bundle/vim-cljfmt"]
 	path = .vim/bundle/vim-cljfmt
 	url = https://github.com/venantius/vim-cljfmt.git
+[submodule ".vim/bundle/vim-slamhound"]
+	path = .vim/bundle/vim-slamhound
+	url = https://github.com/guns/vim-slamhound.git
