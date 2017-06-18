@@ -18,6 +18,7 @@
   ctags = !.git/hooks/ctags
   dc = diff --cached
   di = diff
+  fp = fetch --all --prune
   lf = log --pretty=fuller
   rc = rebase --continue
   st = status
