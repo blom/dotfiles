@@ -16,3 +16,5 @@ brew 'rbenv-default-gems'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'vim'
+
+cask 'font-bitstream-vera'
