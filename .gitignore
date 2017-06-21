@@ -1,6 +1,7 @@
 /.bash/*.private
 /.lein/repl-history
 /.vim/.netrwhist
+/.vim/plug
 /.vim/shada/
 /.vim/tmp/
 /tags

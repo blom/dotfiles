@@ -1,5 +1,50 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+call plug#begin('~/.vim/plug')
+
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Keithbsmiley/investigate.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'Raimondi/delimitMate'
+Plug 'SirVer/ultisnips'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'blom/vim-puppet'
+Plug 'ervandew/supertab'
+Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-slamhound'
+Plug 'honza/vim-snippets'
+Plug 'kchmck/vim-coffee-script'
+Plug 'kien/ctrlp.vim'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'majutsushi/tagbar'
+Plug 'mileszs/ack.vim'
+Plug 'mmalecki/vim-node.js'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
+Plug 'slim-template/vim-slim'
+Plug 'stephpy/vim-yaml'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'venantius/vim-cljfmt'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/paredit.vim'
+
+call plug#end()
 
 set nocompatible
 
