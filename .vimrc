@@ -122,6 +122,7 @@ let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_use_caching = 0
+let g:ctrlp_user_command = 'ag %s --filename-pattern "" --nocolor'
 let g:ctrlp_working_path_mode = 'ra'
 let g:delimitMate_excluded_ft = "clojure"
 let g:delimitMate_expand_cr = 1
