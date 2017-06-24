@@ -17,6 +17,7 @@ Plug 'honza/vim-snippets'
 Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'kovisoft/paredit'
 Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
 Plug 'mmalecki/vim-node.js'
@@ -42,7 +43,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'venantius/vim-cljfmt'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/paredit.vim'
 
 call plug#end()
 
