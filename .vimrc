@@ -121,6 +121,7 @@ let g:airline_right_sep = ''
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_switch_buffer = 0
+let g:ctrlp_use_caching = 0
 let g:ctrlp_working_path_mode = 'ra'
 let g:delimitMate_excluded_ft = "clojure"
 let g:delimitMate_expand_cr = 1
@@ -168,21 +169,20 @@ map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
 autocmd BufRead,BufNewFile *     map <leader>i :call Preserve("normal gg=G")<cr>
 autocmd BufRead,BufNewFile *.clj map <leader>i :Cljfmt<cr>
 
-let g:ctrlp_map = '<leader>F'
+let g:ctrlp_map = '<leader>f'
 
 map <leader>c  :CtrlPTag<cr>
 map <leader>m  :CtrlPMRU<cr>
-map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
-map <leader>ga :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
-map <leader>gc :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
-map <leader>gh :CtrlPClearCache<cr>\|:CtrlP app/helpers<cr>
-map <leader>gm :CtrlPClearCache<cr>\|:CtrlP app/models<cr>
-map <leader>gv :CtrlPClearCache<cr>\|:CtrlP app/views<cr>
-map <leader>gf :CtrlPClearCache<cr>\|:CtrlP features<cr>
-map <leader>gl :CtrlPClearCache<cr>\|:CtrlP lib<cr>
-map <leader>gp :CtrlPClearCache<cr>\|:CtrlP public<cr>
-map <leader>gs :CtrlPClearCache<cr>\|:CtrlP spec<cr>
-map <leader>gt :CtrlPClearCache<cr>\|:CtrlP test<cr>
+map <leader>ga :CtrlP app/assets<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gf :CtrlP features<cr>
+map <leader>gl :CtrlP lib<cr>
+map <leader>gp :CtrlP public<cr>
+map <leader>gs :CtrlP spec<cr>
+map <leader>gt :CtrlP test<cr>
 
 map j gj
 map k gk
