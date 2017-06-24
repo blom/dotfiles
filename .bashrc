@@ -38,4 +38,13 @@ fi
 [[ $(command -v rbenv) ]] && eval "$(rbenv init -)"
 
 export PATH=/usr/local/heroku/bin:$PATH
+
+if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
+  export PATH="$PATH:/usr/local/opt/fzf/bin"
+fi
+
+[[ $- == *i* ]] && . /usr/local/opt/fzf/shell/completion.bash
+
+. /usr/local/opt/fzf/shell/key-bindings.bash
+
 [[ -e ~/.bash/bashrc.private ]] && . ~/.bash/bashrc.private
