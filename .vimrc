@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plug')
 
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'ElmCast/elm-vim'
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'MarcWeber/vim-addon-mw-utils'
