@@ -47,4 +47,4 @@ fi
 
 . /usr/local/opt/fzf/shell/key-bindings.bash
 
-[[ -e ~/.bash/bashrc.private ]] && . ~/.bash/bashrc.private
+[[ -e ~/.bashrc.private ]] && . ~/.bashrc.private
