@@ -27,7 +27,7 @@ Plug 'mmalecki/vim-node.js'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'rodjek/vim-puppet'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'slim-template/vim-slim'
 Plug 'slime-lang/vim-slime-syntax'
 Plug 'stephpy/vim-yaml'
