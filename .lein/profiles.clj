@@ -1,10 +1,10 @@
 {:user {:aliases {"slamhound" ["run" "-m" "slam.hound"]}
-        :dependencies [[cljfmt "0.5.6"]
+        :dependencies [[cljfmt "0.5.7"]
                        [slamhound "1.5.5"]]
         :plugins [[jonase/eastwood "0.2.4"]
                   [lein-ancient "0.6.10"]
                   [lein-bikeshed "0.4.1"]
-                  [lein-cljfmt "0.5.6"]
+                  [lein-cljfmt "0.5.7"]
                   [lein-cloverage "1.0.9"]
                   [lein-kibit "0.1.5"]
                   [lein-pprint "1.1.2"]
