@@ -13,6 +13,7 @@ alias ll="ls -al"
 
 CLICOLOR=true
 EDITOR=vim
+ERL_AFLAGS="-kernel shell_history enabled"
 PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 PATH=$HOME/.rbenv/bin:$PATH
 if [[ $(command -v ruby) ]]; then
@@ -23,7 +24,7 @@ PS1="\u@\h:\W"
 PS1="$PS1\\$ "
 PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 
-export CLICOLOR EDITOR PATH PS1
+export CLICOLOR EDITOR ERL_AFLAGS PATH PS1
 
 shopt -s histappend
 HISTCONTROL="erasedups:ignoreboth"
