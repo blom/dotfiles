@@ -122,6 +122,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:clojure_align_subforms = 1
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_switch_buffer = 0
