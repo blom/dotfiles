@@ -19,7 +19,6 @@ Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-slamhound'
 Plug 'honza/vim-snippets'
 Plug 'kchmck/vim-coffee-script'
-Plug 'kien/rainbow_parentheses.vim'
 Plug 'kovisoft/paredit'
 Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
@@ -109,10 +108,6 @@ autocmd BufRead,BufNewFile *.ejs setfiletype html
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 autocmd FileType puppet set commentstring=#\ %s
 
-autocmd Syntax * RainbowParenthesesLoadRound
-autocmd Syntax * RainbowParenthesesLoadSquare
-autocmd Syntax * RainbowParenthesesLoadBraces
-
 command! FormatJSON %!python -m json.tool
 
 let g:NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
@@ -167,7 +162,6 @@ map <leader>e :Eval<cr>
 map <leader>R :so ~/.vimrc<cr>
 map <leader>b :TagbarToggle<cr>
 map <leader>n :NERDTreeToggle<cr>
-map <leader>r :RainbowParenthesesToggle<cr>
 map <leader>s :set spell!<cr>
 map <leader>t :call Preserve("%s/\\s\\+$//e")<cr>
 map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
