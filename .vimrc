@@ -107,7 +107,6 @@ autocmd InsertLeave * set list
 
 autocmd BufRead,BufNewFile *.ejs setfiletype html
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-autocmd FileType puppet set commentstring=#\ %s
 
 command! FormatJSON %!python -m json.tool
 
