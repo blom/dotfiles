@@ -105,9 +105,6 @@ set listchars=tab:▸·,trail:·,nbsp:●
 autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 
-autocmd BufRead,BufNewFile *.ejs setfiletype html
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-
 command! FormatJSON %!python -m json.tool
 
 let g:NERDTreeIgnore = ['^\.git$', '^\.svn$', '\.swp$']
