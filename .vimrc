@@ -78,6 +78,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+set background=light
 set cursorline
 set guicursor+=a:blinkon0
 highlight Cursor guifg=white guibg=black
